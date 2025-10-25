@@ -1,11 +1,21 @@
 #include <iostream>
 int main() {
 	using u_t = unsigned;
-	u_t a = 0;
+	u_t a = 0, b = 0, c = 0;
+	std::cin << c >> b;
+	size_t count = 0;
+	while (std::cin >> a) 
+	{
+		if ( eof())
+		else if ( fail())
+	}
+	
 	size_t count = 0;
 	while(std::cin >> a) 
 	{
-		count++;
+		count += is Pyth(a,b,c)?1:0; // count+= a*a // count++
+		c = b;
+		b = a;
 	}
 
 	if (std::cin.eof()) 
@@ -18,4 +28,15 @@ int main() {
 		std::cerr << "Error\n";
 		return 1;
 	}
+	
+	bool is Pyth(unsigned a, unsigned b, unsigned c) {
+		bool p = a * a == b * b + c * c
+			p = p || b * b = c * c + a * a
+			p = p || c * c = a * a + b * b
+			return p;
+	}
 }
+
+
+
+
